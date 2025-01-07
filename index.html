@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISKOPATU KEMENAG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .left-section {
+            flex: 1;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .left-section img {
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .left-section .qr-code {
+            margin-top: 10px;
+        }
+
+        .right-section {
+            flex: 2;
+            padding-left: 20px;
+        }
+
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            opacity: 0.7;
+        }
+
+        .info div {
+            flex: 1 1 100%;
+            margin-bottom: 10px;
+        }
+
+        .vaccine-cards {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .vaccine-card {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .vaccine-card img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Tambahan untuk tulisan di atas gambar vaksin */
+        .vaccine-card h3 {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        /* Media queries untuk perangkat lebih kecil */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .right-section {
+                padding-left: 0;
+            }
+
+            .info div {
+                flex: 1 1 100%;
+            }
+
+            .left-section img {
+                width: 100px;
+            }
+
+            .vaccine-card img {
+                width: 100%;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+
+            .vaccine-cards {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 18px;
+            }
+
+            .left-section img {
+                width: 80px;
+            }
+
+            .vaccine-card img {
+                width: 100%;
+            }
+
+            .container {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+
+            .info p {
+                font-size: 14px;
+            }
+
+            .footer {
+                font-size: 10px;
+            }
+
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-section {
+                order: 1;
+            }
+
+            .right-section {
+                order: 2;
+            }
+
+            .vaccine-cards {
+                order: 3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Informasi dan Sertifikat Vaksin Jamaah Umroh</h1>
+            <p>Umrah Pilgrim Information and Vaccine Certificates</p>
+        </div>
+
+        <div class="content">
+            <div class="left-section">
+                <img src="0701.jpeg" alt="Jamaah Photo">
+                <div class="qr-code">
+                    <img src="qr.png" alt="QR Code" width="100">
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="info">
+                    <div>
+                        <p><strong>Nomor Porsi Umrah (Umrah ID)</strong>: XQWJZN</p>
+                        <p><strong>Nama (Name)</strong>MUH HILMI ZULKARNAIN</p>
+                        <p><strong>No Paspor</strong>: E5751142</p>
+                        <p><strong>PPIU (Travel Agent)</strong>: PT. DAWOOD FATIMAH ALGHONNA</p>
+                        <p><strong>Hotel (Hotel)</strong>: Elaf Kinda Hotel MAKKAH, 20/10/2024 - 23/10/2024</p>
+                    </div>
+                    <div>
+                        <p>Al Ansar Golden Tulip, MADINAH, 24/10/2024 - 30/10/2024</p>
+                    </div>
+                </div>
+
+                <div class="vaccine-cards">
+                    <div class="vaccine-card">
+                        <h3>Vaksin Pertama</h3>
+                        <img src="VAKSINHILMI.jpeg" alt="Sertifikat Vaksin Pertama">
+                    </div>
+
+                    <div class="vaccine-card">
+                        <h3>Vaksin Kedua</h3>
+                        <img src="VAKSIN2.jpeg" alt="Sertifikat Vaksin Kedua">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; Hak Cipta 2024 Kementerian Agama RI</p>
+        </div>
+    </div>
+</body>
+
+</html>
